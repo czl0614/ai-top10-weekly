@@ -3,7 +3,7 @@
   "title_accent": "周安装量 TOP 10",
   "subtitle": "按 npm / PyPI 公开周下载量排序 · 数据截至 2026.10.22",
   "footer": "数据来源 npm registry · PyPI stats ｜ 每周一自动更新",
-  "generated_at": "2026-10-21T19:57:58Z",
+  "generated_at": "2026-10-21T20:07:10Z",
   "items": [
     {
       "name": "OpenAI Codex",
