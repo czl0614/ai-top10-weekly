@@ -3,7 +3,7 @@
   "title_accent": "周安装量 TOP 10",
   "subtitle": "按 npm / PyPI 公开周下载量排序 · 数据截至 2026.10.22",
   "footer": "数据来源 npm registry · PyPI stats ｜ 每周一自动更新",
-  "generated_at": "2026-10-21T20:07:10Z",
+  "generated_at": "2026-10-21T20:13:51Z",
   "items": [
     {
       "name": "OpenAI Codex",
@@ -46,6 +46,14 @@
       "source": "npm:@google/gemini-cli"
     },
     {
+      "name": "CodeBuddy",
+      "cn": "腾讯 AI 编程智能体",
+      "metric": "13万",
+      "tag": "商业",
+      "raw_weekly": 129210,
+      "source": "npm:@tencent-ai/codebuddy-code"
+    },
+    {
       "name": "OpenHands",
       "cn": "开源自主软件工程智能体",
       "metric": "11万",
@@ -76,14 +84,6 @@
       "tag": "开源",
       "raw_weekly": 42575,
       "source": "npm:cline"
-    },
-    {
-      "name": "Auggie",
-      "cn": "Augment 终端智能体",
-      "metric": "1.6万",
-      "tag": "商业",
-      "raw_weekly": 16297,
-      "source": "npm:@augmentcode/auggie"
     }
   ]
 }

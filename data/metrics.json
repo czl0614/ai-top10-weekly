@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-21T20:07:10Z",
+  "fetched_at": "2026-10-21T20:13:51Z",
   "weeks_per_month": 4.345,
   "metrics": [
     {
@@ -77,6 +77,17 @@
       "raw": 42575,
       "raw_period": "last-week",
       "weekly": 42575.0,
+      "error": null
+    },
+    {
+      "id": "codebuddy",
+      "name": "CodeBuddy",
+      "cn": "腾讯 AI 编程智能体",
+      "tag": "商业",
+      "source": "npm:@tencent-ai/codebuddy-code",
+      "raw": 129210,
+      "raw_period": "last-week",
+      "weekly": 129210.0,
       "error": null
     },
     {

@@ -52,6 +52,13 @@
       "npm": "cline"
     },
     {
+      "id": "codebuddy",
+      "name": "CodeBuddy",
+      "cn": "腾讯 AI 编程智能体",
+      "tag": "商业",
+      "npm": "@tencent-ai/codebuddy-code"
+    },
+    {
       "id": "auggie",
       "name": "Auggie",
       "cn": "Augment 终端智能体",
