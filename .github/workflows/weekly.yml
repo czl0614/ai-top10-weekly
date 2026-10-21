@@ -1,0 +1,58 @@
+name: AI 应用周榜 TOP10
+
+on:
+  schedule:
+    # 每周一 01:00 UTC = 北京时间 09:00
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖与中文字体
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk
+          python -m pip install --quiet --upgrade pip
+          python -m pip install --quiet pillow
+
+      - name: 生成海报
+        run: python scripts/generate.py
+
+      - name: 提交海报到仓库
+        run: |
+          cp poster.png poster_latest.png
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add poster_latest.png
+          if git diff --staged --quiet; then
+            echo "海报无变化，跳过提交"
+          else
+            git commit -m "chore: 更新周榜海报 $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: 推送 Bark
+        env:
+          BARK_KEY: ${{ secrets.BARK_KEY }}
+          BARK_GROUP: ${{ vars.BARK_GROUP || 'AI周报' }}
+          SITE_URL: https://github.com/${{ github.repository }}
+          POSTER_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/poster_latest.png?v=${{ github.run_number }}
+        run: |
+          # raw CDN 有缓存，稍等再取图
+          sleep 20
+          python scripts/push_bark.py

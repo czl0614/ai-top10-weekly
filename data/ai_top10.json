@@ -1,0 +1,18 @@
+{
+  "title_main": "AI 生产力应用",
+  "title_accent": "热度 TOP 10",
+  "subtitle": "按实际使用规模排序 · 数据截至 2026.10.22",
+  "footer": "数据来源 易观分析 / JetBrains AI Pulse / 厂商披露 · 制图 寒霜",
+  "items": [
+    {"name": "GitHub Copilot", "cn": "装机量最大的编程助手", "metric": "470万付费", "tag": "编程"},
+    {"name": "Cursor", "cn": "AI 原生 IDE，收入第二", "metric": "ARR 20亿", "tag": "编程"},
+    {"name": "Claude Code", "cn": "终端智能体，满意度第一", "metric": "ARR 25亿", "tag": "编程"},
+    {"name": "WorkBuddy", "cn": "腾讯桌面办公智能体", "metric": "8534万月访", "tag": "办公"},
+    {"name": "千问办公", "cn": "阿里系办公入口", "metric": "4655万月访", "tag": "办公"},
+    {"name": "豆包办公", "cn": "字节系办公智能体", "metric": "3039万月访", "tag": "办公"},
+    {"name": "OpenAI Codex", "cn": "自动化工程任务执行", "metric": "500万周活", "tag": "编程"},
+    {"name": "Windsurf", "cn": "免费额度宽松的 IDE", "metric": "60万付费", "tag": "编程"},
+    {"name": "CodeBuddy", "cn": "腾讯系编程智能体", "metric": "合计1.17亿", "tag": "编程"},
+    {"name": "AiPy 爱派", "cn": "唯一独立开源的办公智能体", "metric": "190万月访", "tag": "办公"}
+  ]
+}
