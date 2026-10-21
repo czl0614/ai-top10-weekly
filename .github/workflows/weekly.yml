@@ -61,7 +61,6 @@ jobs:
         env:
           BARK_KEY: ${{ secrets.BARK_KEY }}
           BARK_GROUP: ${{ vars.BARK_GROUP || 'AI周报' }}
-          SITE_URL: https://github.com/${{ github.repository }}
         run: |
           # raw.githubusercontent.com 在国内经常连不通，Bark 拉不到图就只剩文字
           # 改用 jsdelivr，按 commit SHA 取图（SHA 不可变，不会命中旧缓存）

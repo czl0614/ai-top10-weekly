@@ -21,7 +21,7 @@ def main():
     lines = []
     for i, it in enumerate(data["items"][:10], 1):
         lines.append(f"{i:02d} {it['name']} · {it['metric']}")
-    body = "\n".join(lines) + "\n\n展开通知看海报 · 点击查看完整榜单"
+    body = "\n".join(lines) + "\n\n展开通知看海报 · 点击看大图"
 
     payload = {
         "device_key": key,
@@ -32,8 +32,15 @@ def main():
 
     image_url = os.environ.get("POSTER_URL", "").strip()
     if image_url:
+        # Bark 里两个参数分工不同：
+        #   image -> 通知卡片里显示哪张图
+        #   url   -> 点这条通知后跳到哪个地址
+        # 默认让 url 指向海报原图（点开就是大图），要跳别的页面用 SITE_URL 覆盖。
         payload["image"] = image_url
         payload["url"] = os.environ.get("SITE_URL", "").strip() or image_url
+
+    print("图片地址:", payload.get("image", "(无)"))
+    print("跳转地址:", payload.get("url", "(无)"))
 
     req = urllib.request.Request(
         "https://api.day.app/push",
