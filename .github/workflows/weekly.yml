@@ -51,8 +51,21 @@ jobs:
           BARK_KEY: ${{ secrets.BARK_KEY }}
           BARK_GROUP: ${{ vars.BARK_GROUP || 'AI周报' }}
           SITE_URL: https://github.com/${{ github.repository }}
-          POSTER_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/poster_latest.png?v=${{ github.run_number }}
         run: |
-          # raw CDN 有缓存，稍等再取图
-          sleep 20
+          # raw.githubusercontent.com 在国内经常连不通，Bark 拉不到图就只剩文字
+          # 改用 jsdelivr，按 commit SHA 取图（SHA 不可变，不会命中旧缓存）
+          SHA=$(git rev-parse HEAD)
+          PRIMARY="https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@${SHA}/poster_latest.png"
+          MIRROR="https://ghfast.top/https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SHA}/poster_latest.png"
+
+          export POSTER_URL="$PRIMARY"
+          code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 30 "$PRIMARY" || echo 000)
+          echo "图床自检 jsdelivr: $code"
+          if [ "$code" != "200" ]; then
+            export POSTER_URL="$MIRROR"
+            echo "回退镜像: $POSTER_URL"
+          fi
+          echo "最终海报地址: $POSTER_URL"
+
+          sleep 5
           python scripts/push_bark.py
