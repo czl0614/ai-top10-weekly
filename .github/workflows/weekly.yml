@@ -53,7 +53,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "本周数据无变化，跳过提交"
           else
-            git commit -m "chore: 更新周榜 $(date -u +%Y-%m-%d)"
+            git commit -m "chore: 更新周榜 $(TZ=Asia/Shanghai date +%Y-%m-%d)"
             git push
           fi
 
