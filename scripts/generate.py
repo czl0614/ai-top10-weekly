@@ -64,9 +64,14 @@ def F(kind, size):
 
 
 def stamp(text):
-    """副标题里的「数据截至 YYYY.MM.DD」自动换成运行当天，避免每周推同一张旧日期"""
-    today = datetime.date.today().strftime("%Y.%m.%d")
-    return re.sub(r"数据截至\s*\d{4}[.\-/]\d{1,2}[.\-/]\d{1,2}", f"数据截至 {today}", text)
+    """副标题里的「数据截至 YYYY.MM.DD」统一换成北京时间当天
+
+    注意必须显式用 UTC+8：CI runner 的本地时间是 UTC，
+    直接 date.today() 会让凌晨跑出来的海报日期比北京时间早一天。
+    """
+    bj = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=8)
+    return re.sub(r"数据截至\s*\d{4}[.\-/]\d{1,2}[.\-/]\d{1,2}",
+                  f"数据截至 {bj.strftime('%Y.%m.%d')}", text)
 
 
 def load_bg(path, box_w, box_h, focus_y):
