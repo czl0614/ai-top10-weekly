@@ -79,3 +79,12 @@ jobs:
 
           sleep 5
           python scripts/push_bark.py
+
+      # 抓取/出图任一环节失败时也推一条，避免「这周怎么没推」的静默失败
+      - name: 失败告警
+        if: failure()
+        env:
+          BARK_KEY: ${{ secrets.BARK_KEY }}
+          BARK_GROUP: ${{ vars.BARK_GROUP || 'AI周报' }}
+          BARK_ALERT: AI 周榜本周生成失败
+        run: python scripts/push_bark.py
