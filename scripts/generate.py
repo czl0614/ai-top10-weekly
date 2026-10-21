@@ -103,7 +103,7 @@ def build(data, out_path):
     img = ImageEnhance.Brightness(img).enhance(1.04)
     img = ImageEnhance.Color(img).enhance(0.95)
     canvas.paste(img, (0, 0))
-    canvas = vgrad(canvas, 0, 340, SCRIM, 150, 0)
+    canvas = vgrad(canvas, 0, 390, SCRIM, 232, 0)
     canvas = vgrad(canvas, IMG_H - 150, IMG_H + 20, SCRIM, 0, 250)
     d = ImageDraw.Draw(canvas, "RGBA")
 
@@ -137,7 +137,9 @@ def build(data, out_path):
     w1 = d.textlength(data["title_main"], font=f_h1) / S
     d.text(((M + w1 + 14) * S, TY * S), data["title_accent"], font=f_h1l, fill=ACC,
            stroke_width=sw, stroke_fill=stroke)
-    t((M, TY + 92), stamp(data["subtitle"]), f_sub, SUB)
+    # 副标题压在照片上，必须自带白色描边，否则遇到亮部/暗部都会糊掉
+    d.text((M * S, (TY + 92) * S), stamp(data["subtitle"]), font=f_sub, fill=SUB,
+           stroke_width=2 * S, stroke_fill=(255, 255, 255, 242))
     ln((0, IMG_H), (W, IMG_H), (*ACC, 90), 1)
 
     items = data["items"]

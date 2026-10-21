@@ -1,0 +1,111 @@
+{
+  "updated": "2026-10-22",
+  "note": "候选池。每个条目必须有 npm 或 pypi 字段，否则无法取得公开下载量。新增条目只需在这里加一行。",
+  "candidates": [
+    {
+      "id": "codex",
+      "name": "OpenAI Codex",
+      "cn": "OpenAI 官方终端智能体",
+      "tag": "商业",
+      "npm": "@openai/codex"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "cn": "Anthropic 终端编程智能体",
+      "tag": "商业",
+      "npm": "@anthropic-ai/claude-code"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "cn": "SST 开源终端智能体",
+      "tag": "开源",
+      "npm": "opencode-ai"
+    },
+    {
+      "id": "copilot-cli",
+      "name": "GitHub Copilot CLI",
+      "cn": "GitHub 官方命令行助手",
+      "tag": "商业",
+      "npm": "@github/copilot"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "cn": "Google 开源终端智能体",
+      "tag": "开源",
+      "npm": "@google/gemini-cli"
+    },
+    {
+      "id": "qwen-code",
+      "name": "Qwen Code",
+      "cn": "阿里通义开源编程助手",
+      "tag": "开源",
+      "npm": "@qwen-code/qwen-code"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "cn": "开源 IDE 编程智能体",
+      "tag": "开源",
+      "npm": "cline"
+    },
+    {
+      "id": "auggie",
+      "name": "Auggie",
+      "cn": "Augment 终端智能体",
+      "tag": "商业",
+      "npm": "@augmentcode/auggie"
+    },
+    {
+      "id": "amp",
+      "name": "Amp",
+      "cn": "Sourcegraph 终端智能体",
+      "tag": "商业",
+      "npm": "@sourcegraph/amp"
+    },
+    {
+      "id": "claude-flow",
+      "name": "Claude Flow",
+      "cn": "多智能体编排框架",
+      "tag": "开源",
+      "npm": "claude-flow"
+    },
+    {
+      "id": "continue-cli",
+      "name": "Continue CLI",
+      "cn": "开源 IDE 助手的命令行版",
+      "tag": "开源",
+      "npm": "@continuedev/cli"
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "cn": "开源自主软件工程智能体",
+      "tag": "开源",
+      "pypi": "openhands-ai"
+    },
+    {
+      "id": "aider",
+      "name": "Aider",
+      "cn": "老牌开源结对编程工具",
+      "tag": "开源",
+      "pypi": "aider-chat"
+    },
+    {
+      "id": "gptme",
+      "name": "gptme",
+      "cn": "终端里的个人 AI 助手",
+      "tag": "开源",
+      "pypi": "gptme"
+    },
+    {
+      "id": "open-interpreter",
+      "name": "Open Interpreter",
+      "cn": "本地代码执行助手",
+      "tag": "开源",
+      "pypi": "open-interpreter"
+    }
+  ]
+}

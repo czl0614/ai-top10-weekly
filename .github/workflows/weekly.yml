@@ -9,6 +9,11 @@ on:
 permissions:
   contents: write
 
+# 防止手动触发和定时任务撞车
+concurrency:
+  group: weekly-top10
+  cancel-in-progress: false
+
 jobs:
   weekly:
     runs-on: ubuntu-latest
@@ -30,19 +35,25 @@ jobs:
           python -m pip install --quiet --upgrade pip
           python -m pip install --quiet pillow
 
+      - name: 抓取 npm / PyPI 下载量
+        run: python scripts/fetch_metrics.py
+
+      - name: 排序生成榜单数据
+        run: python scripts/rank.py
+
       - name: 生成海报
         run: python scripts/generate.py
 
-      - name: 提交海报到仓库
+      - name: 提交结果到仓库
         run: |
           cp poster.png poster_latest.png
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add poster_latest.png
+          git add poster_latest.png data/metrics.json data/ai_top10.json
           if git diff --staged --quiet; then
-            echo "海报无变化，跳过提交"
+            echo "本周数据无变化，跳过提交"
           else
-            git commit -m "chore: 更新周榜海报 $(date -u +%Y-%m-%d)"
+            git commit -m "chore: 更新周榜 $(date -u +%Y-%m-%d)"
             git push
           fi
 

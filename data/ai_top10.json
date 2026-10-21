@@ -1,18 +1,89 @@
 {
-  "title_main": "AI 生产力应用",
-  "title_accent": "热度 TOP 10",
-  "subtitle": "按实际使用规模排序 · 数据截至 2026.10.22",
-  "footer": "数据来源 易观分析 / JetBrains AI Pulse / 厂商披露 · 制图 寒霜",
+  "title_main": "AI 编程工具",
+  "title_accent": "周安装量 TOP 10",
+  "subtitle": "按 npm / PyPI 公开周下载量排序 · 数据截至 2026.10.22",
+  "footer": "数据来源 npm registry · PyPI stats ｜ 每周一自动更新",
+  "generated_at": "2026-10-21T19:50:00Z",
   "items": [
-    {"name": "GitHub Copilot", "cn": "装机量最大的编程助手", "metric": "470万付费", "tag": "编程"},
-    {"name": "Cursor", "cn": "AI 原生 IDE，收入第二", "metric": "ARR 20亿", "tag": "编程"},
-    {"name": "Claude Code", "cn": "终端智能体，满意度第一", "metric": "ARR 25亿", "tag": "编程"},
-    {"name": "WorkBuddy", "cn": "腾讯桌面办公智能体", "metric": "8534万月访", "tag": "办公"},
-    {"name": "千问办公", "cn": "阿里系办公入口", "metric": "4655万月访", "tag": "办公"},
-    {"name": "豆包办公", "cn": "字节系办公智能体", "metric": "3039万月访", "tag": "办公"},
-    {"name": "OpenAI Codex", "cn": "自动化工程任务执行", "metric": "500万周活", "tag": "编程"},
-    {"name": "Windsurf", "cn": "免费额度宽松的 IDE", "metric": "60万付费", "tag": "编程"},
-    {"name": "CodeBuddy", "cn": "腾讯系编程智能体", "metric": "合计1.17亿", "tag": "编程"},
-    {"name": "AiPy 爱派", "cn": "唯一独立开源的办公智能体", "metric": "190万月访", "tag": "办公"}
+    {
+      "name": "OpenAI Codex",
+      "cn": "OpenAI 官方终端智能体",
+      "metric": "1315万",
+      "tag": "商业",
+      "raw_weekly": 13153561,
+      "source": "npm:@openai/codex"
+    },
+    {
+      "name": "Claude Code",
+      "cn": "Anthropic 终端编程智能体",
+      "metric": "642万",
+      "tag": "商业",
+      "raw_weekly": 6419887,
+      "source": "npm:@anthropic-ai/claude-code"
+    },
+    {
+      "name": "OpenCode",
+      "cn": "SST 开源终端智能体",
+      "metric": "212万",
+      "tag": "开源",
+      "raw_weekly": 2123309,
+      "source": "npm:opencode-ai"
+    },
+    {
+      "name": "GitHub Copilot CLI",
+      "cn": "GitHub 官方命令行助手",
+      "metric": "114万",
+      "tag": "商业",
+      "raw_weekly": 1135549,
+      "source": "npm:@github/copilot"
+    },
+    {
+      "name": "Gemini CLI",
+      "cn": "Google 开源终端智能体",
+      "metric": "23万",
+      "tag": "开源",
+      "raw_weekly": 227214,
+      "source": "npm:@google/gemini-cli"
+    },
+    {
+      "name": "OpenHands",
+      "cn": "开源自主软件工程智能体",
+      "metric": "11万",
+      "tag": "开源",
+      "raw_weekly": 106114,
+      "source": "pypi:openhands-ai"
+    },
+    {
+      "name": "Aider",
+      "cn": "老牌开源结对编程工具",
+      "metric": "6万",
+      "tag": "开源",
+      "raw_weekly": 59956,
+      "source": "pypi:aider-chat"
+    },
+    {
+      "name": "Qwen Code",
+      "cn": "阿里通义开源编程助手",
+      "metric": "4.5万",
+      "tag": "开源",
+      "raw_weekly": 45040,
+      "source": "npm:@qwen-code/qwen-code"
+    },
+    {
+      "name": "Cline",
+      "cn": "开源 IDE 编程智能体",
+      "metric": "4.3万",
+      "tag": "开源",
+      "raw_weekly": 42575,
+      "source": "npm:cline"
+    },
+    {
+      "name": "Auggie",
+      "cn": "Augment 终端智能体",
+      "metric": "1.6万",
+      "tag": "商业",
+      "raw_weekly": 16297,
+      "source": "npm:@augmentcode/auggie"
+    }
   ]
 }

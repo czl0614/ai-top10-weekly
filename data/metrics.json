@@ -1,0 +1,171 @@
+{
+  "fetched_at": "2026-10-21T19:50:00Z",
+  "weeks_per_month": 4.345,
+  "metrics": [
+    {
+      "id": "codex",
+      "name": "OpenAI Codex",
+      "cn": "OpenAI 官方终端智能体",
+      "tag": "商业",
+      "source": "npm:@openai/codex",
+      "raw": 13153561,
+      "raw_period": "last-week",
+      "weekly": 13153561.0,
+      "error": null
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "cn": "Anthropic 终端编程智能体",
+      "tag": "商业",
+      "source": "npm:@anthropic-ai/claude-code",
+      "raw": 6419887,
+      "raw_period": "last-week",
+      "weekly": 6419887.0,
+      "error": null
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "cn": "SST 开源终端智能体",
+      "tag": "开源",
+      "source": "npm:opencode-ai",
+      "raw": 2123309,
+      "raw_period": "last-week",
+      "weekly": 2123309.0,
+      "error": null
+    },
+    {
+      "id": "copilot-cli",
+      "name": "GitHub Copilot CLI",
+      "cn": "GitHub 官方命令行助手",
+      "tag": "商业",
+      "source": "npm:@github/copilot",
+      "raw": 1135549,
+      "raw_period": "last-week",
+      "weekly": 1135549.0,
+      "error": null
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "cn": "Google 开源终端智能体",
+      "tag": "开源",
+      "source": "npm:@google/gemini-cli",
+      "raw": 227214,
+      "raw_period": "last-week",
+      "weekly": 227214.0,
+      "error": null
+    },
+    {
+      "id": "qwen-code",
+      "name": "Qwen Code",
+      "cn": "阿里通义开源编程助手",
+      "tag": "开源",
+      "source": "npm:@qwen-code/qwen-code",
+      "raw": 45040,
+      "raw_period": "last-week",
+      "weekly": 45040.0,
+      "error": null
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "cn": "开源 IDE 编程智能体",
+      "tag": "开源",
+      "source": "npm:cline",
+      "raw": 42575,
+      "raw_period": "last-week",
+      "weekly": 42575.0,
+      "error": null
+    },
+    {
+      "id": "auggie",
+      "name": "Auggie",
+      "cn": "Augment 终端智能体",
+      "tag": "商业",
+      "source": "npm:@augmentcode/auggie",
+      "raw": 16297,
+      "raw_period": "last-week",
+      "weekly": 16297.0,
+      "error": null
+    },
+    {
+      "id": "amp",
+      "name": "Amp",
+      "cn": "Sourcegraph 终端智能体",
+      "tag": "商业",
+      "source": "npm:@sourcegraph/amp",
+      "raw": 14892,
+      "raw_period": "last-week",
+      "weekly": 14892.0,
+      "error": null
+    },
+    {
+      "id": "claude-flow",
+      "name": "Claude Flow",
+      "cn": "多智能体编排框架",
+      "tag": "开源",
+      "source": "npm:claude-flow",
+      "raw": 7033,
+      "raw_period": "last-week",
+      "weekly": 7033.0,
+      "error": null
+    },
+    {
+      "id": "continue-cli",
+      "name": "Continue CLI",
+      "cn": "开源 IDE 助手的命令行版",
+      "tag": "开源",
+      "source": "npm:@continuedev/cli",
+      "raw": 3237,
+      "raw_period": "last-week",
+      "weekly": 3237.0,
+      "error": null
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "cn": "开源自主软件工程智能体",
+      "tag": "开源",
+      "source": "pypi:openhands-ai",
+      "raw": 461064,
+      "raw_period": "last-month",
+      "weekly": 106113.69390103567,
+      "error": null
+    },
+    {
+      "id": "aider",
+      "name": "Aider",
+      "cn": "老牌开源结对编程工具",
+      "tag": "开源",
+      "source": "pypi:aider-chat",
+      "raw": 260509,
+      "raw_period": "last-month",
+      "weekly": 59956.041426927506,
+      "error": null
+    },
+    {
+      "id": "gptme",
+      "name": "gptme",
+      "cn": "终端里的个人 AI 助手",
+      "tag": "开源",
+      "source": "pypi:gptme",
+      "raw": 32174,
+      "raw_period": "last-month",
+      "weekly": 7404.8331415420025,
+      "error": null
+    },
+    {
+      "id": "open-interpreter",
+      "name": "Open Interpreter",
+      "cn": "本地代码执行助手",
+      "tag": "开源",
+      "source": "pypi:open-interpreter",
+      "raw": 28176,
+      "raw_period": "last-month",
+      "weekly": 6484.695051783659,
+      "error": null
+    }
+  ]
+}
