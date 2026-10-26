@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-21T20:18:32Z",
+  "fetched_at": "2026-10-26T05:42:18Z",
   "weeks_per_month": 4.345,
   "metrics": [
     {
@@ -8,9 +8,9 @@
       "cn": "OpenAI 官方终端智能体",
       "tag": "商业",
       "source": "npm:@openai/codex",
-      "raw": 13153561,
+      "raw": 13075592,
       "raw_period": "last-week",
-      "weekly": 13153561.0,
+      "weekly": 13075592.0,
       "error": null
     },
     {
@@ -19,9 +19,9 @@
       "cn": "Anthropic 终端编程智能体",
       "tag": "商业",
       "source": "npm:@anthropic-ai/claude-code",
-      "raw": 6419887,
+      "raw": 7234137,
       "raw_period": "last-week",
-      "weekly": 6419887.0,
+      "weekly": 7234137.0,
       "error": null
     },
     {
@@ -30,9 +30,9 @@
       "cn": "SST 开源终端智能体",
       "tag": "开源",
       "source": "npm:opencode-ai",
-      "raw": 2123309,
+      "raw": 2180172,
       "raw_period": "last-week",
-      "weekly": 2123309.0,
+      "weekly": 2180172.0,
       "error": null
     },
     {
@@ -41,9 +41,9 @@
       "cn": "GitHub 官方命令行助手",
       "tag": "商业",
       "source": "npm:@github/copilot",
-      "raw": 1135549,
+      "raw": 1297555,
       "raw_period": "last-week",
-      "weekly": 1135549.0,
+      "weekly": 1297555.0,
       "error": null
     },
     {
@@ -52,9 +52,9 @@
       "cn": "Google 开源终端智能体",
       "tag": "开源",
       "source": "npm:@google/gemini-cli",
-      "raw": 227214,
+      "raw": 231316,
       "raw_period": "last-week",
-      "weekly": 227214.0,
+      "weekly": 231316.0,
       "error": null
     },
     {
@@ -63,9 +63,9 @@
       "cn": "阿里通义开源编程助手",
       "tag": "开源",
       "source": "npm:@qwen-code/qwen-code",
-      "raw": 45040,
+      "raw": 48110,
       "raw_period": "last-week",
-      "weekly": 45040.0,
+      "weekly": 48110.0,
       "error": null
     },
     {
@@ -74,9 +74,9 @@
       "cn": "开源 IDE 编程智能体",
       "tag": "开源",
       "source": "npm:cline",
-      "raw": 42575,
+      "raw": 47831,
       "raw_period": "last-week",
-      "weekly": 42575.0,
+      "weekly": 47831.0,
       "error": null
     },
     {
@@ -85,9 +85,9 @@
       "cn": "腾讯 AI 编程智能体",
       "tag": "商业",
       "source": "npm:@tencent-ai/codebuddy-code",
-      "raw": 129210,
+      "raw": 132421,
       "raw_period": "last-week",
-      "weekly": 129210.0,
+      "weekly": 132421.0,
       "error": null
     },
     {
@@ -96,9 +96,9 @@
       "cn": "Augment 终端智能体",
       "tag": "商业",
       "source": "npm:@augmentcode/auggie",
-      "raw": 16297,
+      "raw": 18631,
       "raw_period": "last-week",
-      "weekly": 16297.0,
+      "weekly": 18631.0,
       "error": null
     },
     {
@@ -107,9 +107,9 @@
       "cn": "Sourcegraph 终端智能体",
       "tag": "商业",
       "source": "npm:@sourcegraph/amp",
-      "raw": 14892,
+      "raw": 16008,
       "raw_period": "last-week",
-      "weekly": 14892.0,
+      "weekly": 16008.0,
       "error": null
     },
     {
@@ -118,9 +118,9 @@
       "cn": "多智能体编排框架",
       "tag": "开源",
       "source": "npm:claude-flow",
-      "raw": 7033,
+      "raw": 8402,
       "raw_period": "last-week",
-      "weekly": 7033.0,
+      "weekly": 8402.0,
       "error": null
     },
     {
@@ -129,9 +129,9 @@
       "cn": "开源 IDE 助手的命令行版",
       "tag": "开源",
       "source": "npm:@continuedev/cli",
-      "raw": 3237,
+      "raw": 2865,
       "raw_period": "last-week",
-      "weekly": 3237.0,
+      "weekly": 2865.0,
       "error": null
     },
     {
