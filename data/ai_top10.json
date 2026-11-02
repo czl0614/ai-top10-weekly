@@ -1,57 +1,65 @@
 {
   "title_main": "AI 编程工具",
   "title_accent": "周安装量 TOP 10",
-  "subtitle": "按 npm / PyPI 公开周下载量排序 · 数据截至 2026.10.26",
+  "subtitle": "按 npm / PyPI 公开周下载量排序 · 数据截至 2026.11.02",
   "footer": "数据来源 npm registry · PyPI stats ｜ 每周一自动更新",
-  "generated_at": "2026-10-26T05:42:18Z",
+  "generated_at": "2026-11-02T07:04:32Z",
   "items": [
     {
       "name": "OpenAI Codex",
       "cn": "OpenAI 官方终端智能体",
-      "metric": "1308万",
+      "metric": "2774万",
       "tag": "商业",
-      "raw_weekly": 13075592,
+      "raw_weekly": 27738136,
       "source": "npm:@openai/codex"
     },
     {
       "name": "Claude Code",
       "cn": "Anthropic 终端编程智能体",
-      "metric": "723万",
+      "metric": "1208万",
       "tag": "商业",
-      "raw_weekly": 7234137,
+      "raw_weekly": 12083369,
       "source": "npm:@anthropic-ai/claude-code"
     },
     {
       "name": "OpenCode",
       "cn": "SST 开源终端智能体",
-      "metric": "218万",
+      "metric": "497万",
       "tag": "开源",
-      "raw_weekly": 2180172,
+      "raw_weekly": 4965694,
       "source": "npm:opencode-ai"
     },
     {
       "name": "GitHub Copilot CLI",
       "cn": "GitHub 官方命令行助手",
-      "metric": "130万",
+      "metric": "161万",
       "tag": "商业",
-      "raw_weekly": 1297555,
+      "raw_weekly": 1609480,
       "source": "npm:@github/copilot"
     },
     {
       "name": "Gemini CLI",
       "cn": "Google 开源终端智能体",
-      "metric": "23万",
+      "metric": "45万",
       "tag": "开源",
-      "raw_weekly": 231316,
+      "raw_weekly": 445883,
       "source": "npm:@google/gemini-cli"
     },
     {
       "name": "CodeBuddy",
       "cn": "腾讯 AI 编程智能体",
-      "metric": "13万",
+      "metric": "12万",
       "tag": "商业",
-      "raw_weekly": 132421,
+      "raw_weekly": 124747,
       "source": "npm:@tencent-ai/codebuddy-code"
+    },
+    {
+      "name": "Qwen Code",
+      "cn": "阿里通义开源编程助手",
+      "metric": "12万",
+      "tag": "开源",
+      "raw_weekly": 115424,
+      "source": "npm:@qwen-code/qwen-code"
     },
     {
       "name": "OpenHands",
@@ -62,28 +70,20 @@
       "source": "pypi:openhands-ai"
     },
     {
+      "name": "Cline",
+      "cn": "开源 IDE 编程智能体",
+      "metric": "11万",
+      "tag": "开源",
+      "raw_weekly": 105276,
+      "source": "npm:cline"
+    },
+    {
       "name": "Aider",
       "cn": "老牌开源结对编程工具",
       "metric": "6万",
       "tag": "开源",
       "raw_weekly": 59956,
       "source": "pypi:aider-chat"
-    },
-    {
-      "name": "Qwen Code",
-      "cn": "阿里通义开源编程助手",
-      "metric": "4.8万",
-      "tag": "开源",
-      "raw_weekly": 48110,
-      "source": "npm:@qwen-code/qwen-code"
-    },
-    {
-      "name": "Cline",
-      "cn": "开源 IDE 编程智能体",
-      "metric": "4.8万",
-      "tag": "开源",
-      "raw_weekly": 47831,
-      "source": "npm:cline"
     }
   ]
 }
